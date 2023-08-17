@@ -1,0 +1,11 @@
+this system designed by Mr. Tuncer Sengoz
+
+d02:=L;
+d12:=ref(L,-1);
+izdip2:=ref(L,-2);
+d32:=ref(L,-3);
+d42:=ref(L,-4);
+h32:=ref(H,-3);
+h22:=ref(h,-2);
+(izdip2<d02 and izdip2<d12 and izdip2<d32 and izdip2<d42 and ref(h,-1)<max(h32,h22) and h>max(h32,h22)) or
+(d12<d02 and d12<izdip2 and d12<d32 and h>max(h22,ref(h,-1)))
