@@ -1,0 +1,10 @@
+designed by Mr. Yigit Kaynak
+it works 60m but its signal is can be watch on the 5-10-15-20 min graph. a Natural filter :) 
+Adjust the numbers according to yourself.
+
+TIME:=HOUR()<>ref(HOUR(),-1);
+YGT:=10; 
+KYN:=0.5; 
+TX:=2/(YGT+1);  
+RX:=If(TIME,(TX*Ref(C,-1))+((1-TX)*PREV),PREV);
+MOST(RX,1,KYN); RX
