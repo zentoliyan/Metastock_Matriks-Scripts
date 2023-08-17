@@ -1,3 +1,5 @@
+ROTT concept was designed by Mr. Anil Ozeksi.
+
 X1:=30;
 X2:=100;
 MOV(C,X1,VAR)-(MOV(C,X1,VAR)-MOV(C,X2,VAR))+MOV(C,X2,VAR);
