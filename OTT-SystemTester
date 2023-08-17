@@ -1,0 +1,7 @@
+OTT concept was designed by Mr. Anil Ozeksi.
+
+OTT, a TRALING that follows the variable average, two bars behind.
+
+The cross of price and OTT: CROSS(C,OTT(C,2,1.4))
+
+The cross of the OTT line and the OTT Support Line: Cross(OTTSup(C,2,1.4),OTT(C,2,1.4))
