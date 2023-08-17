@@ -1,0 +1,10 @@
+OTT concept was designed by Mr. Anil Ozeksi.
+
+OTT, a TRALING that follows the variable average, two bars behind.
+
+opt:=1.4;
+per:=2;
+C1:=mov(c,per,var);
+q1:=ref(C1,-2)*(1+opt/200);
+q2:=ref(C1,-2)*(1-opt/200);
+If(Cum(1)=1,C1,If(q1 <= PREV,q1,If(q2 >= PREV,q2,PREV)));C1
