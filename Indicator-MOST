@@ -1,0 +1,17 @@
+MOST is designed by Mr. Anil Ozeksi
+yuzde:=2;
+per:=3;
+ort:=mov(c,per,E);
+
+ortp:=ort-(ort*yuzde/100);
+ortm:=ort+(ort*yuzde/100);
+
+line1:=if(ort<prev,ortp,if(ortp>prev,ortp,prev));
+line2:=if(ort>prev,ortp,if(ortp<prev,ortm,prev));
+
+k1:=cross(ort,ref(line2,-1));
+k2:=cross(ref(line1-1),ort);
+
+s1:=barssince(k1)<barssince(k2);
+s2:=if(s1=-1,line1,line2);
+ort;s2
