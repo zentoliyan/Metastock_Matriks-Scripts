@@ -1,0 +1,7 @@
+Period:=100;
+High:=H;
+Low:=L;
+K1:=DataTrend(Low,Period,-10,D,D);
+T1:=DataTrend(High,Period,-10,D,T);
+FARK:=T1-K1;
+ref(fark,-period)*0.4>fark and roc(k1,period,%)<-3 and roc(t1,period,%)<-3 and ref(c,-period)*1.5>ref(T1,-period)
